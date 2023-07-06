@@ -53,3 +53,16 @@ main{
     padding: 10px;
     display: block;
 }
+
+#formulario h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#formulario p{
+    font-size: 0.8em;
+}
+
+#formulario label{
+    font-size: 0.9em;
+}
