@@ -26,33 +26,33 @@ main{
 }
 
 section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+
     background-color: white;
     width: 250px;
     height: 515px;
     border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.469);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
-    position: absolute;
-    left: 50%;
-    top: 50%;
     transform: translate(-50%, -50%);
-
-    transition: width 0.3s, heigth 0.3s;
+    transition: width .3s, heigth .3s;
     transition-timing-function: ease;
 }
 
 section#login > div#imagem{
+    display: block;
     background: #5f2c82 url(../imagens/pexels-juan-felipe-ramírez.jpg) no-repeat ;
     background-size: cover;
-    height: 200px;
-    display: block;
     background-position: left bottom;
+    height: 200px;
 }
 
 section#login > div#formulario{
-    padding: 10px;
     display: block;
+    padding: 10px;
 }
 
 div#formulario > h1{
@@ -66,15 +66,40 @@ div#formulario > p{
 
 form > div.campo{
     background-color: #5f2c82;
-    width: 100%;
+    border: 2px solid #5f2c82;
     display: block;
+    width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
-form  label{
+div.campo > label{
     display: none;
+}
+
+div.campo > i{
+    color: white;
+    /*background-color: black;*/
+    font-size: 1.9em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input{
+    background-color: #94cfcd;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-10px);
+}
+
+div.campo > input:focus-within{
+    background-color: white;
+    border: none;
 }
 
 form > input[type=submit]{
@@ -82,15 +107,15 @@ form > input[type=submit]{
     font-size: 1em;
     width: 100%;
     height: 40px;
-    background-color: #49a09d;
+    background-color: #53aaa7;
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 form > input[type=submit]:hover{
-    background-color: #285756;
-    cursor: pointer;
+    background-color: #2d6462;
 }
 
 form > a.btn{
@@ -99,21 +124,20 @@ form > a.btn{
     font-size: 1em;
     width: 100%;
     height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
     background-color: white;
+    color: #2d6462;
     border: 1px solid #49a09d;
     border-radius: 7px;
     text-decoration: none;
-    color: #285756;
-    padding-top: 5px;
-    margin-top: 5px;
 }
 
 form > a.btn:hover{
-    background-color: #65e6e1;
+    background-color: #6cd3cf;
 }
 
-form > a.btn > span{
+form > a.btn > i{
     font-size: 0.8em;
-    
 }
 
